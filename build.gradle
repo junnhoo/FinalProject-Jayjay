@@ -36,13 +36,13 @@ configurations {
 }
 
 task executeAPITests(type: Test) {
-    useJUnitPlatform()
+    useJUnit()
     systemProperty "cucumber.filter.tags", "@api"
-    systemProperty "cucumber.plugin", "pretty, html:build/reports/api/html, json:build/reports/api/json/cucumber.json"
+    systemProperty "cucumber.plugin", "pretty, html:reports/api/api-cucumber-report.html, json:reports/api/api-cucumber-report.json"
 }
 
 task executeWebTests(type: Test) {
-    useJUnitPlatform()
+    useJUnit()
     systemProperty "cucumber.filter.tags", "@web"
-    systemProperty "cucumber.plugin", "html:build/reports/web/cucumber.html, json:build/reports/web/cucumber.json"
+    systemProperty "cucumber.plugin", "html:reports/web/web-cucumber-report.html, json:reports/web/json/web-cucumber-report.json"
 }

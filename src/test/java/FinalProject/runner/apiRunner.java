@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         tags = "@api",
         plugin = {
                 "pretty",
-                "html:reports/cucumber/api-cucumber-report.html",
-                "json:report/cucumber/api-cucumber-report.json"
+                "html:reports/api/api-cucumber-report.html",
+                "json:reports/api/api-cucumber-report.json"
         },
         monochrome = true
 )

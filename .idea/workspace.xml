@@ -49,39 +49,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: apitag.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: cart.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: category.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: checkout.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: signup.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build FinalProject-Jayjay.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jango/IdeaProjects/FinalProject-Jayjay&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: apitag.executor": "Run",
+    "Cucumber Java.Feature: apiuser.executor": "Run",
+    "Cucumber Java.Feature: cart.executor": "Run",
+    "Cucumber Java.Feature: category.executor": "Run",
+    "Cucumber Java.Feature: checkout.executor": "Run",
+    "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Feature: signup.executor": "Run",
+    "Gradle.Build FinalProject-Jayjay.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jango/IdeaProjects/FinalProject-Jayjay",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: checkout">
-    <configuration name="Feature: cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Cucumber Java.Feature: apiuser">
+    <configuration name="Feature: apitag" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/cart.feature" />
-      <option name="GLUE" value="FinalProject.hooks FinalProject.web.webstepdef" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/apitag.feature" />
+      <option name="GLUE" value="FinalProject.hooks FinalProject.api.apistepdef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-Jayjay.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: cart" />
+      <option name="SUGGESTED_NAME" value="Feature: apitag" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -93,14 +95,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: category" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: apiuser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/category.feature" />
-      <option name="GLUE" value="FinalProject.hooks FinalProject.web.webstepdef" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/apiuser.feature" />
+      <option name="GLUE" value="FinalProject.hooks FinalProject.api.apistepdef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-Jayjay.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: category" />
+      <option name="SUGGESTED_NAME" value="Feature: apiuser" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -171,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: checkout" />
-        <item itemvalue="Cucumber Java.Feature: cart" />
-        <item itemvalue="Cucumber Java.Feature: category" />
+        <item itemvalue="Cucumber Java.Feature: apiuser" />
+        <item itemvalue="Cucumber Java.Feature: apitag" />
         <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Feature: signup" />
+        <item itemvalue="Cucumber Java.Feature: checkout" />
       </list>
     </recent_temporary>
   </component>
