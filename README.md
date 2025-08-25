@@ -15,14 +15,14 @@ Sebelum melakukan automated test, pastikan Anda telah menginstal perangkat lunak
 * **Selenium WebDriver:** Dependensi Maven.
 * **Gradle** versi 8.10
 * **Browser web:** Google Chrome (versi 136.0.7103.114)
-* **Browser web:**RestAssured: Untuk menguji dan memvalidasi REST API.
+* **RestAssured: Untuk menguji dan memvalidasi REST API.
 
 ## Cara Menjalankan Program
-Clone Repository dari Github (Menggunakan Bash Code): git clone https://github.com/junnhoo/FinalProject-Jayjay.git cd FinalProject-Jayjay
-Buka Terminal
-Downlaod Dependencies: ./gradlew build
-Clean Gradle: ./gradlew clean
-Run WEB UI Test: ./gradlew executeWebTests
-Run API Test: ./gradlew executeAPITests
+* Clone Repository dari Github (Menggunakan Bash Code): git clone https://github.com/junnhoo/FinalProject-Jayjay.git cd FinalProject-Jayjay
+* Buka Terminal
+* Downlaod Dependencies: ./gradlew build
+* Clean Gradle: ./gradlew clean
+* Run WEB UI Test: ./gradlew executeWebTests
+* Run API Test: ./gradlew executeAPITests
 
 
