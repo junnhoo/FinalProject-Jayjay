@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Create User Response Schema",
+  "description": "Schema for a successful new user creation response from DummyAPI",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique ID of the newly created user"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First name of the created user"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name of the created user"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address of the created user"
+    },
+    "registerDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Registration date of the user (ISO 8601 format)"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last updated date of the user (ISO 8601 format)"
+    }
+  },
+  "required": [
+    "id",
+    "firstName",
+    "lastName",
+    "email",
+    "registerDate",
+    "updatedDate"
+  ],
+  "additionalProperties": true
+}

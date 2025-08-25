@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Delete User Response Schema",
+  "description": "Schema for a successful user deletion response from DummyAPI",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique ID of the deleted user"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "additionalProperties": false
+}

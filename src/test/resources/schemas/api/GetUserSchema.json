@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User Details Schema",
+  "description": "Schema for a single user details response from DummyAPI",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique ID of the user"
+    },
+    "title": {
+      "type": "string",
+      "enum": ["mr", "ms", "mrs", "dr"],
+      "description": "Title of the user (e.g., Mr, Ms)"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First name of the user"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name of the user"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female", "other"],
+      "description": "Gender of the user"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address of the user"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of birth of the user (ISO 8601 format)"
+    },
+    "registerDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Registration date of the user (ISO 8601 format)"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last updated date of the user (ISO 8601 format)"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number of the user"
+    },
+    "picture": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the user's profile picture"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string" },
+        "country": { "type": "string" },
+        "timezone": { "type": "string" }
+      },
+      "required": ["street", "city", "state", "country", "timezone"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "firstName",
+    "lastName",
+    "gender",
+    "email",
+    "dateOfBirth",
+    "registerDate",
+    "updatedDate",
+    "phone",
+    "picture",
+    "location"
+  ],
+  "additionalProperties": false
+}

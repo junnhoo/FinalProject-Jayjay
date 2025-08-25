@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.hamcrest:hamcrest:2.2'         // For assertions
+    testImplementation 'io.qameta.allure:allure-testng:2.25.0'
+    testImplementation 'org.testng:testng:7.7.0'
+    implementation 'org.json:json:20210307'
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.3.0'
+
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.22.0'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.0'
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.20.0'
+    testImplementation 'io.cucumber:cucumber-java:7.20.0'
+    testImplementation 'io.cucumber:cucumber-picocontainer:7.20.0'
+    testImplementation 'org.assertj:assertj-core:3.26.0'
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task executeAPITests(type: Test) {
+    useJUnitPlatform()
+    systemProperty "cucumber.filter.tags", "@api"
+    systemProperty "cucumber.plugin", "pretty, html:build/reports/api/html, json:build/reports/api/json/cucumber.json"
+}
+
+task executeWebTests(type: Test) {
+    useJUnitPlatform()
+    systemProperty "cucumber.filter.tags", "@web"
+    systemProperty "cucumber.plugin", "html:build/reports/web/cucumber.html, json:build/reports/web/cucumber.json"
+}
