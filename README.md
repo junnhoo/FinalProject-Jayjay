@@ -1,4 +1,4 @@
-## Kerangka Kerja Pengujian Otomatis Web & API
+## Pengujian Otomatis Web & API
 
 Repositori ini berisi tes otomatis Final Project Jayjay. 
 Pengujian ini berupa tes otomatis Web UI dan API dalam satu proyek. 
