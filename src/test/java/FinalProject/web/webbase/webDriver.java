@@ -26,7 +26,7 @@ public class webDriver {
 
             options.setExperimentalOption("prefs", prefs);
 
-            // options.addArguments("--headless");
+            options.addArguments("--headless");
             options.addArguments("--incognito");
             options.addArguments("--disable-gpu");
             options.addArguments("--no-sandbox");
