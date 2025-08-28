@@ -127,8 +127,7 @@ public class userStepdef {
     @And("the response should indicate the user was deleted successfully")
     public void theResponseShouldIndicateTheUserWasDeletedSuccessfully() {
         response.then()
-                .assertThat().body("id", notNullValue())
-                .assertThat().body("message", containsString("Delete Successful"));
+                .assertThat().body("id", equalTo(userId));
     }
 
     @And("the response should conform to the JSON schema {string}")

@@ -13,7 +13,7 @@ public class apiBase {
     public static RequestSpecification getRequest() {
         return new RequestSpecBuilder()
                 .setBaseUri(BASE_URI)
-                .addHeader("app_id", APP_ID)
+                .addHeader("app-id", APP_ID)
                 .setContentType(ContentType.JSON)
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())

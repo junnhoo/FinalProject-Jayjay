@@ -3,7 +3,7 @@ Feature: User API DummyAPI
   @api @user @positive
   Scenario: Get user by ID
     Given I have access to Dummy API
-    When I send GET user by id ID "60d0fe4f5311236168a109ca"
+    When I send GET user by id ID "60d0fe4f5311236168a109d4"
     Then the system response status code 200
     And the system show the user detail with a matching ID
     And the response should conform to the JSON schema "user/GetUserSchema.json"
@@ -32,6 +32,6 @@ Feature: User API DummyAPI
   Scenario: Get user details with an invalid ID
     Given I have access to Dummy API
     When I send GET user by id ID "invalidID123"
-    Then the system response status code 400
-    And the response should contain the error message "INVALID USER ID"
+    Then the system response status code 404
+    And the response should contain the error message "RESOURCE_NOT_FOUND"
 

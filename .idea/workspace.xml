@@ -59,13 +59,15 @@
     "Cucumber Java.Feature: login.executor": "Run",
     "Cucumber Java.Feature: signup.executor": "Run",
     "Gradle.Build FinalProject-Jayjay.executor": "Run",
+    "Gradle.apiRunner.executor": "Run",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jango/IdeaProjects/FinalProject-Jayjay",
+    "last_opened_file_path": "C:/Users/jango/IdeaProjects/FinalProjectJayjay",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "http.proxy"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -75,7 +77,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Feature: apiuser">
+  <component name="RunManager" selected="Cucumber Java.Feature: apitag">
     <configuration name="Feature: apitag" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/apitag.feature" />
@@ -103,25 +105,6 @@
       <module name="FinalProject-Jayjay.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: apiuser" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/checkout.feature" />
-      <option name="GLUE" value="FinalProject.hooks FinalProject.web.webstepdef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalProject-Jayjay.test" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: checkout" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -171,13 +154,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="apiRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":executeAPITests" />
+            <option value="--tests" />
+            <option value="&quot;FinalProject.runner.apiRunner&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: apiuser" />
         <item itemvalue="Cucumber Java.Feature: apitag" />
+        <item itemvalue="Gradle.apiRunner" />
+        <item itemvalue="Cucumber Java.Feature: apiuser" />
         <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Feature: signup" />
-        <item itemvalue="Cucumber Java.Feature: checkout" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756139712441</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit commit">
+      <option name="closed" value="true" />
+      <created>1756144779107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756144779107</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +249,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="edit commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit commit" />
   </component>
 </project>

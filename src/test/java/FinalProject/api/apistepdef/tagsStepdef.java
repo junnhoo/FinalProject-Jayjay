@@ -34,6 +34,6 @@ public class tagsStepdef {
     public void theResponseShouldContainListOfTags() {
         response.then().body("data", notNullValue());
         response.then().body("data", instanceOf(java.util.List.class));
-        response.then().body("data[0].id", notNullValue());
+        response.then().body("data.size()", greaterThan(0));
     }
 }
