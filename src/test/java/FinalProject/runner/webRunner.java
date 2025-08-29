@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "FinalProject.web.webstepdef",
                 "FinalProject.hooks"
         },
-        tags = "@web",
+        tags = "",
         plugin = {
                 "pretty",
                 "html:reports/web/web-cucumber-report.html",
