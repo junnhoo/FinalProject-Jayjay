@@ -51,34 +51,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: apitag.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: apiuser.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: cart.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: category.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: checkout.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: signup.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build FinalProject-Jayjay.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.apiRunner.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jango/IdeaProjects/FinalProject-Jayjay&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: apitag.executor": "Run",
+    "Cucumber Java.Feature: apiuser.executor": "Run",
+    "Cucumber Java.Feature: cart.executor": "Run",
+    "Cucumber Java.Feature: category.executor": "Run",
+    "Cucumber Java.Feature: checkout.executor": "Run",
+    "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Feature: signup.executor": "Run",
+    "Gradle.Build FinalProject-Jayjay.executor": "Run",
+    "Gradle.apiRunner.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jango/IdeaProjects/FinalProject-Jayjay",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "http.proxy"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Cucumber Java.Feature: apitag">
     <configuration name="Feature: apitag" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -271,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756461374124</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit reports">
+      <option name="closed" value="true" />
+      <created>1756463351881</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756463351881</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

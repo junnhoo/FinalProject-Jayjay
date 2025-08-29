@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/api",
         glue = {
-                "FinalProject.api.apistepdef",
+                "FinalProject.api.apistepdef"
                 // "FinalProject.hooks"
         },
-        tags = "",
+        tags = "@api",
         plugin = {
                 "pretty",
                 "html:reports/api/api-cucumber-report.html",

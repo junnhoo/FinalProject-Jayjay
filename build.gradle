@@ -10,30 +10,34 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'org.hamcrest:hamcrest:2.2'         // For assertions
-    testImplementation 'io.qameta.allure:allure-testng:2.25.0'
-    testImplementation 'org.testng:testng:7.7.0'
-    implementation 'org.json:json:20210307'
+    testImplementation 'io.cucumber:cucumber-java:7.15.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.15.0'
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.15.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+
     testImplementation 'io.rest-assured:rest-assured:5.3.0'
     testImplementation 'io.rest-assured:json-schema-validator:5.3.0'
+    implementation 'org.json:json:20230227'
+
 
     testImplementation 'org.seleniumhq.selenium:selenium-java:4.22.0'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.0'
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
-    testImplementation 'io.cucumber:cucumber-junit:7.20.0'
-    testImplementation 'io.cucumber:cucumber-java:7.20.0'
-    testImplementation 'io.cucumber:cucumber-picocontainer:7.20.0'
-    testImplementation 'org.assertj:assertj-core:3.26.0'
 }
 
-configurations {
+test {
+    useJUnit()
+    outputs.upToDateWhen { false }
+}
+
+/* configurations {
     cucumberRuntime {
         extendsFrom testImplementation
     }
 }
+
+ */
 
 task executeAPITests(type: Test) {
     useJUnit()
@@ -47,4 +51,10 @@ task executeWebTests(type: Test) {
     systemProperty "cucumber.filter.tags", "@web"
     // systemProperty "cucumber.plugin", "html:reports/web/web-cucumber-report.html, json:reports/web/json/web-cucumber-report.json"
     outputs.upToDateWhen { false }
+}
+
+tasks.withType(Test) {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
