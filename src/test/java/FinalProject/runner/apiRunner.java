@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "FinalProject.api.apistepdef"
                 // "FinalProject.hooks"
         },
-        tags = "@api",
+        tags = "",
         plugin = {
                 "pretty",
                 "html:reports/api/api-cucumber-report.html",
