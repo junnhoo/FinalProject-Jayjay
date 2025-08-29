@@ -39,6 +39,7 @@ task executeAPITests(type: Test) {
     useJUnit()
     systemProperty "cucumber.filter.tags", "@api"
     systemProperty "cucumber.plugin", "pretty, html:reports/api/api-cucumber-report.html, json:reports/api/api-cucumber-report.json"
+    outputs.upToDateWhen { false }
 }
 
 task executeWebTests(type: Test) {
