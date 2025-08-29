@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/api",
         glue = {
                 "FinalProject.api.apistepdef",
-                "FinalProject.api.hooks"
+                // "FinalProject.api.hooks"
         },
         tags = "",
         plugin = {
