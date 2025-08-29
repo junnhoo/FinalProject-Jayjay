@@ -41,6 +41,7 @@ test {
 
 task executeAPITests(type: Test) {
     useJUnit()
+    include '**/apiRunner.class'
     systemProperty "cucumber.filter.tags", "@api"
     // systemProperty "cucumber.plugin", "pretty, html:reports/api/api-cucumber-report.html, json:reports/api/api-cucumber-report.json"
     outputs.upToDateWhen { false }
@@ -48,13 +49,16 @@ task executeAPITests(type: Test) {
 
 task executeWebTests(type: Test) {
     useJUnit()
+    include '**/webRunner.class'
     systemProperty "cucumber.filter.tags", "@web"
     // systemProperty "cucumber.plugin", "html:reports/web/web-cucumber-report.html, json:reports/web/json/web-cucumber-report.json"
     outputs.upToDateWhen { false }
 }
 
-tasks.withType(Test) {
+/*tasks.withType(Test) {
     testLogging {
         events "passed", "skipped", "failed"
     }
 }
+
+ */
